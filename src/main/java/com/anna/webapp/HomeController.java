@@ -36,4 +36,16 @@ public class HomeController {
 		return "home";
 	}
 	
+	@RequestMapping(value =  {"/home2"}, method = RequestMethod.GET)
+	public String home2( Model model) {
+		return "home2";
+	}
+	
+	@RequestMapping(value =  {"/home3"}, method = RequestMethod.GET)
+	public String home3( Model model) {
+		return "home3";
+	}
+	
+	
+	
 }

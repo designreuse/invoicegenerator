@@ -18,6 +18,15 @@
 		<artifactId>hibernate-core</artifactId>
 		<version>4.2.3.Final</version>
 	</dependency>
+	  <!--  Jackson mapper is used by spring to convert
+          Java POJOs to JSON strings.
+        -->
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>1.9.12</version>
+        </dependency>
+	
             
 		<!-- Spring -->
 		<dependency>
