@@ -5,13 +5,22 @@
             http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.1.xsd">
             
             
-            
-     <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+<!--         LOCAL     -->
+<!--      <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource"> -->
+<!--         <property name="driverClassName" value="com.mysql.jdbc.Driver" /> -->
+<!--         <property name="url" value="jdbc:mysql://localhost:3306/annamac" /> -->
+<!--         <property name="username" value="root" /> -->
+<!--         <property name="password" value="" /> -->
+<!--     </bean>   -->
+    
+<!--     OPENSHIFT -->
+    <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
         <property name="driverClassName" value="com.mysql.jdbc.Driver" />
-        <property name="url" value="jdbc:mysql://localhost:3306/annamac" />
-        <property name="username" value="root" />
-        <property name="password" value="" />
-    </bean>      
+        <property name="url" value="jdbc:mysql://${OPENSHIFT_MYSQL_DB_HOSTPASSWORD}:${OPENSHIFT_MYSQL_DB_PORT}/annamac" />
+        <property name="username" value="${OPENSHIFT_MYSQL_DB_PASSWORD}" />
+        <property name="password" value="${OPENSHIFT_MYSQL_DB_USERNAME}" />
+    </bean>         
+
 
 	<bean id="sessionFactory"
 		class="org.springframework.orm.hibernate4.LocalSessionFactoryBean">
