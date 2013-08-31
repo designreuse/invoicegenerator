@@ -18,6 +18,17 @@
 		<artifactId>hibernate-core</artifactId>
 		<version>4.2.3.Final</version>
 	</dependency>
+	<dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.10</version>
+    </dependency>
+    
+      <dependency>
+      <groupId>commons-dbcp</groupId>
+      <artifactId>commons-dbcp</artifactId>
+      <version>1.2.2</version>
+    </dependency>
 	  <!--  Jackson mapper is used by spring to convert
           Java POJOs to JSON strings.
         -->
@@ -26,6 +37,52 @@
             <artifactId>jackson-mapper-asl</artifactId>
             <version>1.9.12</version>
         </dependency>
+
+		<dependency>
+			<groupId>cglib</groupId>
+			<artifactId>cglib</artifactId>
+			<version>3.0</version>
+		</dependency>
+		<dependency>
+            <groupId>net.sf.jasperreports</groupId>
+            <artifactId>jasperreports</artifactId>
+            <version>4.7.0</version>           
+        </dependency>
+ 
+
+        <dependency>
+            <groupId>org.apache.poi</groupId>
+            <artifactId>poi</artifactId>
+            <version>3.6</version>
+            <type>jar</type>
+            <scope>compile</scope>
+        </dependency>
+ 
+        <dependency>
+            <groupId>com.lowagie</groupId>
+            <artifactId>itext</artifactId>
+            <version>2.1.7</version>
+        </dependency>
+ 
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.16</version>
+        </dependency>
+ 
+        <dependency>
+            <groupId>commons-digester</groupId>
+            <artifactId>commons-digester</artifactId>
+            <version>2.1</version>
+            <type>jar</type>
+            <scope>compile</scope>
+        </dependency>
+ 
+        <dependency>
+            <groupId>org.codehaus.groovy</groupId>
+            <artifactId>groovy-all</artifactId>
+            <version>1.7.0</version>
+        </dependency> 
 	
             
 		<!-- Spring -->
@@ -61,7 +118,18 @@
 			<groupId>org.springframework.security</groupId>
 			<artifactId>spring-security-config</artifactId>
 			<version>${org.springframework-version}</version>
-		</dependency>   			
+			</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-tx</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>
+	
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>${org.springframework-version}</version>
+		</dependency>		
 		<!-- AspectJ -->
 		<dependency>
 			<groupId>org.aspectj</groupId>

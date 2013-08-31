@@ -74,7 +74,7 @@
 			<nav class="group">
 				<ul>
 					<li class="home"><a href="#" title="">Home</a></li>
-					<li><a href="#" title="">New Invoice</a></li>
+					<li><a href="invoice" title="">New Invoice</a></li>
 					<li><a href="#" title=""></a></li>
 					<li><a href="#" title=""></a></li>
 					<li class="last">
